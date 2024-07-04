@@ -1,0 +1,173 @@
+<!-- HTML 標籤1分
+CSS 類別選擇器10分
+先看全重，再看先後順序，後者贏 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- 沒有加這段程式碼絕對不是響應式 -->
+    <!-- 這段程式碼的用意是:使螢幕解析度與螢幕實際寬高一樣 -->
+    <!-- initial-scale=1.0:最大伸縮比在一倍 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="fan">
+        <a href="#">
+          <img src="img/facebookIcon.png" alt="" />
+          <div>粉絲團</div>
+        </a>
+        <div class="line">|</div>
+        <a href="#">
+          <img src="img/twitterIcon.png" alt="" />
+          <div>追蹤我們</div>
+        </a>
+      </div>
+      <div class="hex">
+        <div class="seconds">
+          <a href="#">
+            <img class="Logo" src="img/logo.png" alt="" />
+          </a>
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <ul>
+          <li class="active"><a href="#">首頁</a></li>
+          <li><a href="#">產品介紹</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <p>六角學院</p>
+        <p>讓你奠定良好的前端基礎</p>
+      </div>
+
+      <div class="threeclass">
+        <div class="class">
+          <img src="img/html.png" alt="" />
+          <div class="word">
+            <h1>Html5基礎教學</h1>
+            <p>主流前端網站設計的基礎就在六腳學</p>
+            <p>院，在這裡不在是填鴨式教學，而是透</p>
+            <p>過實際的範例，瞭解正確的網站開發流</p>
+            <p>程，講師均具有業界開發經驗，讓學員</p>
+            <p class="last">學習業界主流的開發方法。</p>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="class">
+          <img src="img/rwd.png" alt="" />
+          <div class="word">
+            <h1>響應式網站設計</h1>
+            <p>響應式網站設計(Responsive web</p>
+            <p>design)，目前大多使用者均是以手機</p>
+            <p>瀏覽的情況下，響應是網站已經是必備</p>
+            <p>的，六腳學院將會提供業界響應式開發</p>
+            <p class="last">方法，讓學生瞭解行動版開發技巧。</p>
+            <div class="space"></div>
+          </div>
+        </div>
+        <div class="class">
+          <img src="img/jQuery.png" alt="" />
+          <div class="word">
+            <h1>jQuery 實戰教學</h1>
+            <p class="first3">本課程有以下特色</p>
+            <ul>
+              <li>瞭解變數的使用方法</li>
+              <li>學習並操作DOM</li>
+              <li>學習基本數學運算方法</li>
+              <li>套件的操作及運用</li>
+            </ul>
+            <div class="space"></div>
+          </div>
+        </div>
+      </div>
+      <div class="difference">
+        <h1>線上及實體課程的差異</h1>
+        <table>
+          <thead>
+            <tr class="firsttr">
+              <th>項目</th>
+              <th>Hex School 線上課程</th>
+              <th>一般線上課程</th>
+              <th>實體課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>費用</td>
+              <td class="tgreen">較低</td>
+              <td class="tgreen">較低</td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <td>學習效果</td>
+              <td>一般</td>
+              <td class="tgreen">較低</td>
+              <td class="tgreen">很好</td>
+            </tr>
+            <tr>
+              <td>Code review</td>
+              <td class="tgreen">有</td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <td>課程更新速度</td>
+              <td class="tgreen">普通</td>
+              <td class="tgreen">普通</td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <td>多次複習</td>
+              <td class="tgreen">可</td>
+              <td>可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <td>字幕</td>
+              <td class="tgreen">有</td>
+              <td>不一定</td>
+              <td>板書</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <form action="">
+        <h1>對我們課程有興趣嗎?</h1>
+        <h1>歡迎留下您的資料</h1>
+        <div class="finput">
+          <textarea name="note" id="" rols="15" cols="19"></textarea>
+          <div class="rform">
+            <p>姓名<input type="text" autofocus placeholder="六角講師" /></p>
+            <p>電話<input type="text" autofocus placeholder="0912345678" /></p>
+            <p>
+              信箱<input
+                type="text"
+                autofocus
+                placeholder="hexschool@mail.com"
+              />
+            </p>
+            <input class="sub" type="submit" value="送出" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <a class="flogo"><img src="img/footerLogo.png" alt="" /></a>
+      <div class="connection">
+        <p>
+          聯絡我們:<a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a>
+        </p>
+        <p>電話:<a href="tel:+886-999123456">0999-123456</a></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
