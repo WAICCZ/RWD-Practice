@@ -32,11 +32,11 @@ body{
 	width:100%;
 	display:flex;
 	justify-content: space-between;
-
   }
   .hex .seconds{
 	display:flex;
 	align-items:flex-end;
+
   }
   .hex ul{
 	align-items: flex-end;
@@ -240,6 +240,7 @@ body{
 	.hex .seconds{
 	  justify-content: space-between;
 	  align-items:center;
+	  
 	}
 	.hamburger {
 	  display: block;
@@ -251,7 +252,9 @@ body{
       display:none;
 	  flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: center ;
+	  padding:0px;
+
 	  }
 	.threeclass{
 		flex-direction:column;
