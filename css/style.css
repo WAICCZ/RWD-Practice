@@ -229,9 +229,9 @@ body{
 	align-items:flex-start;
 	flex-direction: column;
   }
-  *{
+  /* *{
 	border:1px solid red;
-  }
+  } */
   @media(max-width: 992px){
 	.hex{
 	  flex-direction:column;
