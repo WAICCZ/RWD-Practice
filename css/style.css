@@ -267,4 +267,7 @@ body{
 	.connection p{
 		font-size:12px;
 	}
+	.class p{
+		font-size:10px;
+	  } 
   }
