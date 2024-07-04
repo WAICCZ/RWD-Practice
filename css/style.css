@@ -200,20 +200,37 @@ body{
 	cursor:pointer;
   }
   footer{
+	max-width: 1024px;
+	height:120px;
 	display:flex;
 	justify-content: space-between;
 	box-sizing: border-box;
   }
   footer .flogo{
+	margin-left:10px;
+	margin-top:20px;
 	display: flex;
-	align-items:center;
+	align-items:flex-start;
   }
   footer .connection p a{
 	text-decoration: none;
 	color:#e45988;
 
   }
+  footer .connection p{
+
+	margin:0 ;
+  }
+  .connection
+  {
+	margin-top:20px;
+	margin-right:10px;
+	display: flex;
+	align-items:flex-start;
+	flex-direction: column;
+  }
   *{
+	border:1px solid red;
   }
   @media(max-width: 992px){
 	.hex{
@@ -256,6 +273,14 @@ body{
 		font-size: 10px;
 	}
   }
+  @media(max-width:450px)
+  {
+	.connection p{
+		display: flex;
+		flex-direction: column;
+		font-size:9px;
+	}
+  }
   @media(max-width: 400px)
   {	
 	main .banner p{
@@ -263,9 +288,6 @@ body{
 	  }
 	  table tr{
 		font-size: 6px;
-	}
-	.connection p{
-		font-size:12px;
 	}
 	.class p{
 		font-size:10px;
