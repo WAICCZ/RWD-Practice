@@ -276,6 +276,15 @@ body{
 		font-size: 10px;
 	}
   }
+  @media(max-width:500px)
+  {
+	table tr{
+		font-size: 8px;
+	}
+	main .banner p{
+		font-size:30px;
+	  }
+  }
   @media(max-width:450px)
   {
 	.connection p{
@@ -286,6 +295,9 @@ body{
   }
   @media(max-width: 400px)
   {	
+	.difference h1{
+		font-size:20px;
+	}
 	main .banner p{
 		font-size:20px;
 	  }
@@ -295,4 +307,7 @@ body{
 	.class p{
 		font-size:10px;
 	  } 
+	.class .first3{
+		font-size:16px;
+	}
   }
